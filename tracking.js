@@ -115,3 +115,54 @@ if(steps[i]) steps[i].classList.add("active");
 }
 
    }
+
+function updateProgress(status){
+
+const steps = document.querySelectorAll(".step");
+const progress = document.querySelector(".progress");
+
+steps.forEach(step => step.classList.remove("active"));
+
+progress.className = "progress";
+
+let current = 1;
+
+switch(status){
+
+case "Submitted":
+current = 1;
+break;
+
+case "Under Review":
+case "Applied":
+current = 2;
+break;
+
+case "In Progress":
+current = 3;
+break;
+
+case "Shortlisted":
+current = 4;
+break;
+
+case "Interview Scheduled":
+current = 5;
+break;
+
+case "Offer Letter Sent":
+case "Offered":
+current = 5;
+break;
+
+}
+
+for(let i=0; i<current; i++){
+
+steps[i].classList.add("active");
+
+}
+
+progress.classList.add("status-" + current);
+
+}
