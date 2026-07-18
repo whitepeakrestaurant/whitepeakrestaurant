@@ -1,0 +1,403 @@
+/* White Peak Restaurant */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+
+body{
+    background:#fff;
+    color:#333;
+}
+
+
+
+/* Header */
+
+header{
+
+    position:absolute;
+    top:0;
+    width:100%;
+    padding:25px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:10;
+
+}
+
+
+.logo{
+
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+
+}
+
+
+nav a{
+
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:17px;
+
+}
+
+
+
+/* Hero */
+
+.hero{
+
+height:100vh;
+
+background:
+linear-gradient(
+rgba(0,0,0,0.55),
+rgba(0,0,0,0.55)
+),
+url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+
+}
+
+
+.hero-content{
+
+color:white;
+max-width:850px;
+
+}
+
+
+.hero h1{
+
+font-size:55px;
+margin-bottom:20px;
+
+}
+
+
+.hero p{
+
+font-size:22px;
+margin-bottom:35px;
+
+}
+
+
+
+.btn{
+
+display:inline-block;
+padding:15px 35px;
+background:#d89b32;
+color:white;
+text-decoration:none;
+border-radius:30px;
+margin:10px;
+
+}
+
+
+.second{
+
+background:white;
+color:#333;
+
+}
+
+
+
+
+/* About */
+
+.about{
+
+padding:80px 10%;
+text-align:center;
+
+}
+
+
+.about h2,
+.why h2,
+.menu h2,
+.reviews h2{
+
+font-size:40px;
+color:#b37400;
+margin-bottom:20px;
+
+}
+
+
+.about p{
+
+font-size:18px;
+line-height:1.8;
+
+}
+
+
+
+
+
+/* Why Section */
+
+
+.why{
+
+padding:80px 8%;
+background:#fff7e8;
+text-align:center;
+
+}
+
+
+.cards{
+
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+
+}
+
+
+.card{
+
+background:white;
+width:280px;
+padding:35px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+transition:.4s;
+
+}
+
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+
+.card h3{
+
+font-size:25px;
+margin-bottom:15px;
+
+}
+
+
+
+
+
+/* Menu */
+
+
+.menu{
+
+padding:80px 8%;
+text-align:center;
+
+}
+
+
+
+.food-container{
+
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+
+}
+
+
+.food{
+
+width:300px;
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+
+
+.food img{
+
+width:100%;
+height:220px;
+object-fit:cover;
+
+}
+
+
+.food h3{
+
+font-size:25px;
+margin:15px;
+
+}
+
+
+.food p{
+
+padding:0 15px;
+line-height:1.6;
+
+}
+
+
+.food strong{
+
+display:block;
+color:#d89b32;
+font-size:22px;
+padding:15px;
+
+}
+
+
+
+
+
+/* Reviews */
+
+
+.reviews{
+
+background:#111;
+color:white;
+padding:80px 8%;
+text-align:center;
+
+}
+
+
+.reviews h2{
+
+color:white;
+
+}
+
+
+.reviews h3{
+
+color:#f5bd55;
+margin-bottom:40px;
+
+}
+
+
+
+.review-container{
+
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+
+}
+
+
+
+.review{
+
+background:white;
+color:#333;
+width:280px;
+padding:30px;
+border-radius:20px;
+
+}
+
+
+.review h4{
+
+color:#b37400;
+font-size:22px;
+margin-bottom:15px;
+
+}
+
+
+
+
+
+/* Footer */
+
+
+footer{
+
+background:#000;
+color:white;
+text-align:center;
+padding:30px;
+
+}
+
+
+footer h2{
+
+color:#d89b32;
+margin-bottom:10px;
+
+}
+
+
+
+
+/* Mobile Responsive */
+
+
+@media(max-width:768px){
+
+
+header{
+
+flex-direction:column;
+
+}
+
+
+nav{
+
+margin-top:20px;
+
+}
+
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+
+.hero p{
+
+font-size:18px;
+
+}
+
+
+}
