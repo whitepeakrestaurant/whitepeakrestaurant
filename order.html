@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>White Peak Restaurant | Order</title>
+
+<link rel="stylesheet" href="order.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+White Peak Restaurant
+</div>
+
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="menu.html">Menu</a>
+
+</nav>
+
+</header>
+
+
+
+
+
+<section class="order-section">
+
+
+<div class="order-box">
+
+
+<h1>Complete Your Order</h1>
+
+
+
+<form>
+
+
+<label>Full Name</label>
+
+<input type="text" placeholder="Enter your name" required>
+
+
+
+
+<label>Phone Number</label>
+
+<input type="number" placeholder="Enter phone number" required>
+
+
+
+
+<label>Email</label>
+
+<input type="email" placeholder="Enter email">
+
+
+
+
+<label>Address</label>
+
+<textarea placeholder="Enter delivery address"></textarea>
+
+
+
+
+<label>Selected Dish</label>
+
+<input type="text" id="dishName" readonly>
+
+
+
+
+<label>Quantity</label>
+
+<input type="number" value="1" min="1">
+
+
+
+
+<label>Special Note</label>
+
+<textarea placeholder="Any special request"></textarea>
+
+
+
+
+<button type="button" onclick="goPayment()">
+
+Continue To Payment
+
+</button>
+
+
+
+</form>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<script>
+
+
+// Get Selected Dish
+
+
+let dish = localStorage.getItem("selectedDish");
+
+
+document.getElementById("dishName").value = dish || "No Dish Selected";
+
+
+
+
+function goPayment(){
+
+
+window.location.href="payment.html";
+
+
+}
+
+
+</script>
+
+
+
+</body>
+
+</html>
