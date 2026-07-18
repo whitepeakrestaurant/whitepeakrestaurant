@@ -1,0 +1,386 @@
+/* White Peak Restaurant Final Style */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Arial',sans-serif;
+}
+
+body{
+    color:#333;
+    background:#fff;
+}
+
+
+/* Header */
+
+header{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding:25px 7%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:10;
+}
+
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:16px;
+    transition:.3s;
+}
+
+
+nav a:hover{
+    color:#e0a23b;
+}
+
+
+
+
+/* Hero Background */
+
+.hero{
+
+height:100vh;
+
+background:
+linear-gradient(
+rgba(0,0,0,.60),
+rgba(0,0,0,.60)
+),
+url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+
+}
+
+
+
+.hero-content{
+    color:white;
+    max-width:850px;
+}
+
+
+.hero-content h1{
+    font-size:58px;
+    margin-bottom:20px;
+}
+
+
+.hero-content p{
+    font-size:22px;
+    line-height:1.6;
+    margin-bottom:35px;
+}
+
+
+
+.btn{
+
+display:inline-block;
+padding:15px 35px;
+background:#d89b32;
+color:white;
+text-decoration:none;
+border-radius:30px;
+margin:8px;
+transition:.3s;
+
+}
+
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+
+.second{
+    background:white;
+    color:#333;
+}
+
+
+
+
+/* About Preview */
+
+.about-preview{
+
+padding:80px 10%;
+text-align:center;
+
+}
+
+
+.about-preview h2{
+
+font-size:42px;
+color:#b37400;
+margin-bottom:20px;
+
+}
+
+
+.about-preview p{
+
+font-size:18px;
+line-height:1.8;
+
+}
+
+
+
+
+/* Features */
+
+.features{
+
+padding:70px 8%;
+background:#fff7e8;
+
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+
+}
+
+
+
+.feature-card{
+
+background:white;
+width:280px;
+padding:35px;
+text-align:center;
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+transition:.4s;
+
+}
+
+
+
+.feature-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+
+.feature-card h3{
+
+font-size:25px;
+margin-bottom:15px;
+
+}
+
+
+
+
+/* Popular Dishes */
+
+
+.popular{
+
+padding:80px 8%;
+text-align:center;
+
+}
+
+
+.popular h2{
+
+font-size:42px;
+color:#b37400;
+margin-bottom:40px;
+
+}
+
+
+
+.dish-container{
+
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+
+}
+
+
+
+.dish{
+
+width:300px;
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+
+.dish img{
+
+width:100%;
+height:220px;
+object-fit:cover;
+
+}
+
+
+.dish h3{
+
+font-size:25px;
+margin:15px;
+
+}
+
+
+.dish p{
+
+padding-bottom:20px;
+
+}
+
+
+
+
+
+/* Reviews */
+
+
+.reviews{
+
+background:#111;
+color:white;
+padding:80px 8%;
+text-align:center;
+
+}
+
+
+.reviews h2{
+
+font-size:40px;
+
+}
+
+
+.reviews h3{
+
+color:#e0a23b;
+margin:20px;
+
+}
+
+
+
+.review{
+
+background:white;
+color:#333;
+
+width:300px;
+margin:20px auto;
+
+padding:30px;
+
+border-radius:20px;
+
+}
+
+
+
+
+/* Footer */
+
+
+footer{
+
+background:#000;
+color:white;
+text-align:center;
+padding:30px;
+
+}
+
+
+footer h2{
+
+color:#d89b32;
+margin-bottom:10px;
+
+}
+
+
+
+
+
+/* Mobile Responsive */
+
+
+@media(max-width:900px){
+
+
+header{
+
+flex-direction:column;
+
+}
+
+
+nav{
+
+margin-top:20px;
+text-align:center;
+
+}
+
+
+nav a{
+
+display:inline-block;
+margin:8px;
+
+}
+
+
+.hero-content h1{
+
+font-size:38px;
+
+}
+
+
+.hero-content p{
+
+font-size:18px;
+
+}
+
+  }
