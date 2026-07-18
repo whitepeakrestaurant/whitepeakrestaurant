@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Application Tracking | White Peak Restaurant</title>
+
+<link rel="stylesheet" href="tracking.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="logo">
+White Peak Restaurant
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="menu.html">Menu</a>
+<a href="jobs.html">Jobs</a>
+<a href="tracking.html" class="active">Tracking</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Track Your Job Application</h1>
+
+<p>
+Enter your Application ID and Email Address to check your application status.
+</p>
+
+</div>
+
+</section>
+
+<!-- SEARCH -->
+
+<section class="search-section">
+
+<div class="search-card">
+
+<h2>Application Tracking</h2>
+
+<input
+type="text"
+id="applicationID"
+placeholder="Application ID">
+
+<input
+type="email"
+id="email"
+placeholder="Email Address">
+
+<button onclick="checkStatus()">
+
+Check Status
+
+</button>
+
+</div>
+
+</section>
+
+<!-- RESULT -->
+
+<section id="result" class="result">
+
+<div class="tracking-card">
+
+<h2 id="name"></h2>
+
+<p>
+<strong>Application ID:</strong>
+<span id="appID"></span>
+</p>
+
+<p>
+<strong>Email:</strong>
+<span id="showEmail"></span>
+</p>
+
+<p>
+<strong>Applied Position:</strong>
+<span id="position"></span>
+</p>
+
+<p>
+<strong>Date Applied:</strong>
+<span id="date"></span>
+</p>
+
+<h3>Application Status</h3>
+
+<div class="progress">
+
+<div class="step">
+Submitted
+</div>
+
+<div class="step">
+Applied
+</div>
+
+<div class="step">
+Under Review
+</div>
+
+<div class="step">
+In Progress
+</div>
+
+<div class="step">
+Shortlisted
+</div>
+
+<div class="step">
+Interview
+</div>
+
+<div class="step">
+Offer
+</div>
+
+<div class="step">
+Completed
+</div>
+
+</div>
+
+<div class="message-box">
+
+<h3>Message From HR</h3>
+
+<p id="adminMessage"></p>
+
+</div>
+
+<div class="document-box">
+
+<h3>Documents</h3>
+
+<a
+id="documentLink"
+target="_blank">
+
+View Document
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="tracking.js"></script>
+
+</body>
+
+  </html>
