@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>White Peak Restaurant | Payment</title>
+
+<link rel="stylesheet" href="payment.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+White Peak Restaurant
+</div>
+
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="menu.html">Menu</a>
+
+</nav>
+
+</header>
+
+
+
+
+
+<section class="payment-section">
+
+
+<div class="payment-box">
+
+
+<h1>Payment Details</h1>
+
+
+<form>
+
+
+
+<label>Card Holder Name</label>
+
+<input type="text" placeholder="Name on card" required>
+
+
+
+
+<label>Card Number</label>
+
+<input type="number" placeholder="1234 5678 9012 3456" required>
+
+
+
+
+<div class="row">
+
+
+<div>
+
+<label>Expiry Date</label>
+
+<input type="text" placeholder="MM/YY">
+
+</div>
+
+
+
+<div>
+
+<label>CVV</label>
+
+<input type="number" placeholder="123">
+
+</div>
+
+
+</div>
+
+
+
+
+<label>Payment Method</label>
+
+
+<select>
+
+<option>Credit Card</option>
+
+<option>Debit Card</option>
+
+<option>Master Card</option>
+
+<option>Visa</option>
+
+</select>
+
+
+
+
+<button onclick="payNow()" type="button">
+
+Pay Now
+
+</button>
+
+
+
+</form>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<script>
+
+
+function payNow(){
+
+
+alert("Payment Successful! Your order has been confirmed.");
+
+
+window.location.href="success.html";
+
+
+}
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
