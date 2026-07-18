@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>White Peak Restaurant | Order Confirmed</title>
+
+<link rel="stylesheet" href="success.css">
+
+</head>
+
+
+<body>
+
+
+<div class="success-box">
+
+
+<div class="logo">
+White Peak Restaurant
+</div>
+
+
+<div class="check">
+✓
+</div>
+
+
+<h1>
+Order Confirmed!
+</h1>
+
+
+<p>
+Thank you for choosing White Peak Restaurant.
+</p>
+
+
+<div class="order-info">
+
+
+<h3>Your Order Details</h3>
+
+
+<p>
+Dish:
+<span id="dish"></span>
+</p>
+
+
+<p>
+Status:
+<span>Preparing Your Food</span>
+</p>
+
+
+<p>
+Estimated Time:
+<span>30 - 45 Minutes</span>
+</p>
+
+
+</div>
+
+
+
+<a href="menu.html">
+Back To Menu
+</a>
+
+
+</div>
+
+
+
+
+
+<script>
+
+
+let selectedDish = localStorage.getItem("selectedDish");
+
+
+document.getElementById("dish").innerHTML =
+selectedDish || "Restaurant Special";
+
+
+
+</script>
+
+
+</body>
+
+</html>
