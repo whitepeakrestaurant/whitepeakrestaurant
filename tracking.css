@@ -235,3 +235,542 @@ nav a.active{
     transform:translateY(-2px);
 
 }
+/* ==================================================
+   RESULT SECTION
+================================================== */
+
+.result{
+
+display:none;
+
+padding:20px 20px 80px;
+
+}
+
+.tracking-card{
+
+max-width:1000px;
+
+margin:auto;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(15px);
+
+border:1px solid rgba(212,175,55,.30);
+
+border-radius:25px;
+
+padding:40px;
+
+box-shadow:0 20px 50px rgba(0,0,0,.50);
+
+animation:fadeIn .5s ease;
+
+}
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+transform:translateY(25px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.tracking-card h2{
+
+font-size:36px;
+
+color:#d4af37;
+
+text-align:center;
+
+margin-bottom:30px;
+
+}
+
+/* Applicant Details */
+
+.tracking-card p{
+
+background:rgba(255,255,255,.05);
+
+border-left:4px solid #d4af37;
+
+padding:16px 18px;
+
+border-radius:12px;
+
+margin:15px 0;
+
+font-size:17px;
+
+color:#fff;
+
+}
+
+.tracking-card strong{
+
+color:#d4af37;
+
+}
+
+.tracking-card span{
+
+font-weight:500;
+
+}
+
+/* Status Heading */
+
+.tracking-card h3{
+
+font-size:28px;
+
+color:#d4af37;
+
+margin-top:40px;
+
+margin-bottom:25px;
+
+text-align:center;
+
+}
+
+/* HR Message */
+
+.message-box{
+
+margin-top:40px;
+
+padding:25px;
+
+background:rgba(255,255,255,.06);
+
+border:1px solid rgba(212,175,55,.30);
+
+border-radius:18px;
+
+}
+
+.message-box h3{
+
+margin-bottom:15px;
+
+}
+
+.message-box p{
+
+background:none;
+
+border:none;
+
+padding:0;
+
+margin:0;
+
+line-height:1.8;
+
+}
+
+/* Documents */
+
+.document-box{
+
+display:none;
+
+margin-top:35px;
+
+padding:25px;
+
+background:rgba(255,255,255,.06);
+
+border:1px solid rgba(212,175,55,.30);
+
+border-radius:18px;
+
+}
+
+.document-box h3{
+
+margin-bottom:18px;
+
+}
+
+.document-box a{
+
+display:inline-block;
+
+padding:14px 25px;
+
+background:#d4af37;
+
+color:#000;
+
+font-weight:600;
+
+text-decoration:none;
+
+border-radius:10px;
+
+transition:.3s;
+
+}
+
+.document-box a:hover{
+
+background:#f4d03f;
+
+transform:translateY(-2px);
+
+   }
+/* ==========================================
+   PROFESSIONAL APPLICATION TIMELINE
+========================================== */
+
+.progress{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:flex-start;
+
+position:relative;
+
+margin:50px 0;
+
+gap:10px;
+
+}
+
+.progress::before{
+
+content:"";
+
+position:absolute;
+
+top:20px;
+
+left:0;
+
+width:100%;
+
+height:6px;
+
+background:#444;
+
+border-radius:50px;
+
+z-index:1;
+
+}
+
+/* Green Progress Line */
+
+.progress::after{
+
+content:"";
+
+position:absolute;
+
+top:20px;
+
+left:0;
+
+height:6px;
+
+width:0%;
+
+background:#22c55e;
+
+border-radius:50px;
+
+transition:1s ease;
+
+z-index:2;
+
+}
+
+/* Steps */
+
+.step{
+
+width:100px;
+
+position:relative;
+
+text-align:center;
+
+font-size:13px;
+
+font-weight:500;
+
+color:#aaa;
+
+z-index:3;
+
+}
+
+.step::before{
+
+content:"";
+
+display:block;
+
+width:42px;
+
+height:42px;
+
+margin:auto;
+
+margin-bottom:12px;
+
+background:#555;
+
+border:4px solid #777;
+
+border-radius:50%;
+
+transition:.4s;
+
+}
+
+.step.active{
+
+color:#22c55e;
+
+font-weight:700;
+
+}
+
+.step.active::before{
+
+background:#22c55e;
+
+border-color:#22c55e;
+
+}
+
+/* Timeline Width */
+
+.progress.status-1::after{
+width:0%;
+}
+
+.progress.status-2::after{
+width:14%;
+}
+
+.progress.status-3::after{
+width:28%;
+}
+
+.progress.status-4::after{
+width:42%;
+}
+
+.progress.status-5::after{
+width:57%;
+}
+
+.progress.status-6::after{
+width:71%;
+}
+
+.progress.status-7::after{
+width:85%;
+}
+
+.progress.status-8::after{
+width:100%;
+}
+
+/* Rejected */
+
+.rejected{
+
+margin-top:25px;
+
+padding:18px;
+
+background:#5b1010;
+
+border:1px solid #ff4d4d;
+
+border-radius:12px;
+
+color:#fff;
+
+font-weight:600;
+
+display:none;
+
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width:992px){
+
+header{
+
+padding:15px 5%;
+
+flex-direction:column;
+
+}
+
+nav{
+
+margin-top:15px;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.search-card{
+
+padding:30px;
+
+}
+
+}
+
+
+
+@media (max-width:768px){
+
+.progress{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:30px;
+
+}
+
+.progress::before,
+.progress::after{
+
+display:none;
+
+}
+
+.step{
+
+width:120px;
+
+}
+
+.tracking-card{
+
+padding:25px;
+
+}
+
+.tracking-card h2{
+
+font-size:28px;
+
+}
+
+}
+
+
+
+@media (max-width:480px){
+
+.logo{
+
+font-size:24px;
+
+}
+
+.hero{
+
+height:60vh;
+
+}
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.search-card{
+
+padding:20px;
+
+}
+
+.search-card h2{
+
+font-size:26px;
+
+}
+
+.search-card input{
+
+font-size:15px;
+
+padding:14px;
+
+}
+
+.search-card button{
+
+font-size:16px;
+
+padding:14px;
+
+}
+
+.tracking-card{
+
+padding:20px;
+
+}
+
+.step{
+
+font-size:12px;
+
+}
+
+}
