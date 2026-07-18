@@ -2,7 +2,7 @@
 
 
 // یہاں بعد میں Google Apps Script URL لگائیں گے
-const sheetURL = "YOUR_GOOGLE_SCRIPT_URL";
+const sheetURL = "https://script.google.com/macros/s/AKfycbz9rbuH43UzeuvWy40ec0ac8wkvLnQyRWgcXDRbcike7oxiUejgig1DRMG1XOgzjRPABw/exec";
 
 
 
