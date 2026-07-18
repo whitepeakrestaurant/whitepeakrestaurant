@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+White Peak Restaurant | Application Tracking
+</title>
+
+<link rel="stylesheet" href="tracking.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+White Peak Restaurant
+</div>
+
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="jobs.html">Jobs</a>
+<a href="tracking.html">Tracking</a>
+
+</nav>
+
+</header>
+
+
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div>
+
+<h1>
+Application Tracking
+</h1>
+
+<p>
+Check your job application status anytime.
+</p>
+
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+<!-- SEARCH BOX -->
+
+
+<section class="search-box">
+
+
+<h2>
+Track Your Application
+</h2>
+
+
+<input 
+id="applicationID"
+type="text"
+placeholder="Enter Application ID">
+
+
+<input 
+id="email"
+type="email"
+placeholder="Enter Email Address">
+
+
+<button onclick="checkStatus()">
+
+Check Status
+
+</button>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- RESULT HIDDEN FIRST -->
+
+
+<section id="result" class="result">
+
+
+<div class="profile-card">
+
+
+<h2 id="name">
+</h2>
+
+
+
+<p>
+Email:
+<span id="showEmail"></span>
+</p>
+
+
+
+<p>
+Applied Position:
+<span id="position"></span>
+</p>
+
+
+
+<p>
+Application ID:
+<span id="appID"></span>
+</p>
+
+
+
+<p>
+Date Applied:
+<span id="date"></span>
+</p>
+
+
+
+
+
+
+<h3>
+Application Status
+</h3>
+
+
+
+
+<div class="progress">
+
+
+<div class="step">
+Submitted
+</div>
+
+
+<div class="step">
+Under Review
+</div>
+
+
+<div class="step">
+Shortlisted
+</div>
+
+
+<div class="step">
+Interview
+</div>
+
+
+<div class="step">
+Offer
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="message-box">
+
+
+<h3>
+Message From White Peak Restaurant
+</h3>
+
+
+<p id="adminMessage">
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="document-box">
+
+
+<h3>
+Documents
+</h3>
+
+
+<a id="documentLink" target="_blank">
+
+View Document
+
+</a>
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<script src="tracking.js"></script>
+
+
+</body>
+
+                            </html>
