@@ -618,3 +618,23 @@ alert(
 
 
 });
+
+nextButtons.forEach(button=>{
+
+button.addEventListener("click",()=>{
+
+if(validateStep()){
+
+if(currentStep < steps.length-1){
+
+currentStep++;
+
+showStep(currentStep);
+
+}
+
+}
+
+});
+
+});
